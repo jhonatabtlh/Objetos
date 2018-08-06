@@ -1,39 +1,31 @@
+import java.util.*;
 public class Operacoes{
-  private int media;
-  private int soma;
-  private int divisao;
-  private int subtracao;
-  private int multiplicacao;
-  private double mediaPonderada;
-  private int fatorial;
   
-  public int getMedia(){
+  
+  
+  public void calculeMedia(int valor1, int valor2){
+    double media = (valor1+valor2)/2; 
     return media;
   }
-  public void setMedia(int valor1, int valor2){
-   this.media = valor1+valor2/2; 
-  }
-  public int getSoma(){
-   return soma; 
-  }
-  public void setSoma(int num1, int num2){
+  
+  public void Soma(int num1, int num2){
     this.soma = num1+num2;
   }
-  public int getDivisao(){
-   return divisao; 
-  }
-  public void setDivisao(int num1, int num2){
-   this.divisao = num1/num2;
-  }
-  public int getSubtracao(){
-   return subtracao; 
+  
+  public void Divisao(int num1, int num2){
+   double divisao = num1/num2;
+    return divisao;
   }
   
-  public int getMultiplicacao(){
-   return multiplicacao ;
-  }
-  public void setMultiplicacao(int num1, int num2){
-  this.multiplicacao = num1*num2;
+  
+  public void Multiplicacao(){
+    Scanner teclado = new Scanner(System.in);
+    System.out.println("entre com um numero inteiro");
+      int n1 = teclado.nextInt();
+    System.out.println("entre com o proximo numero inteiro");
+    int n2 = teclado.nextInt();
+  int multiplicacao = n1*n2;
+    return multiplicacao;
   }
   
  
